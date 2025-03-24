@@ -18,8 +18,8 @@ public class BoardListResponse {
 		BoardListResponse response = new BoardListResponse();
 		response.id = board.getId();
 		response.title = board.getTitle();
-		response.categoryName = "profit";
-		response.writerName = "jayce";
+		response.categoryName = "board";
+		response.writerName = "taewoo";
 		response.createdAt = board.getCreatedAt();
 		return response;
 	}
