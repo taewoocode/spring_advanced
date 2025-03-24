@@ -4,9 +4,11 @@ import java.time.LocalDateTime;
 
 import com.example.spring_practice_adv.board.entity.Board;
 
+import lombok.Getter;
 import lombok.Setter;
 
 @Setter
+@Getter
 public class BoardListResponse {
 	private Long id;
 	private String title;
@@ -18,8 +20,8 @@ public class BoardListResponse {
 		BoardListResponse response = new BoardListResponse();
 		response.id = board.getId();
 		response.title = board.getTitle();
-		response.categoryName = "profit";
-		response.writerName = "jayce";
+		response.categoryName = "board";
+		response.writerName = "taewoo";
 		response.createdAt = board.getCreatedAt();
 		return response;
 	}
