@@ -4,9 +4,11 @@ import java.time.LocalDateTime;
 
 import com.example.spring_practice_adv.board.entity.Board;
 
+import lombok.Getter;
 import lombok.Setter;
 
 @Setter
+@Getter
 public class BoardListResponse {
 	private Long id;
 	private String title;
